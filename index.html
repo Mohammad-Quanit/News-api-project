@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="shortcut icon" href="images/icon.ico" />
+	<link rel="manifest" href="manifest.json">
+	<title>News Api Project</title>
+	<style>
+		@import url('https://fonts.googleapis.com/css?family=Anton');
+		@import url('https://fonts.googleapis.com/css?family=News+Cycle');
+
+		@media screen and (max-width: 600px) {
+			#header {
+				margin: 0 auto;
+			}
+			#header>img {
+				width: 100%;
+				height: 50%;
+			}
+		}
+
+		.logoLink {
+			width: 262px;
+		}
+
+		.URLimages {
+			width: 60%;
+			height: 30%;
+		}
+
+		@media screen and (max-width: 600px) {
+			.URLimages {
+				width: 100%;
+				height: 50%;
+			}
+		}
+
+		/* @media screen and (max-width: 600px) {
+			.URLimages{
+				width: 100%;
+				height: 50%;
+			}
+		} */
+
+		#main {
+			margin: 10px;
+			text-align: justify;
+		}
+
+		.para {
+			text-decoration: none;
+			font-size: 20px;
+			font-family: 'News Cycle', sans-serif;
+		}
+
+		.newsTitles {
+			font-family: 'Anton', sans-serif;
+			text-decoration: none;
+			text-align: justify;
+		}
+
+		footer {
+			height: 80px;
+			background-color: #1EBAB4;
+		}
+
+		footer>p {
+			font-size: 20px;
+			font-family: 'News Cycle', sans-serif;
+			color: white;
+		}
+
+		@media screen and (max-width: 600px) {
+			footer>p {
+				font-size: 13px;
+				color: white;
+			}
+		}
+
+		@media screen and (max-width: 434px) {
+			footer {
+				height: 60px;
+			}
+			footer>p {
+				font-size: 10px;
+				font-weight: bold;
+				color: white;
+			}
+		}
+
+		select,
+		option {
+			font-family: 'News Cycle', sans-serif;
+			font-size: 20px;
+		}
+
+		section{
+			margin-left:20px; 
+		}
+	</style>
+</head>
+
+<body>
+	<div class="w3-container" style="background-color: #1EBAB4">
+		<a class="logoLink" href="index.html">
+			<div id="header">
+				<img src="images/logo.png" alt="SiteLogo" class="logo">
+			</div>
+		</a>
+	</div>
+	<section>
+		<h2>News Sources</h2>
+		<select id="sourceNews"></select>
+	</section>
+	<div class="w3-container w3-white" id="main">
+	</div>
+	<footer class="w3-display-container">
+		<p class="w3-display-topmiddle">Developed with
+			<img src="images/heart01.png" alt="heart" class="src"> by
+			<a href="https://mohammad-quanit.github.io/">Mohammad Quanit</a>
+		</p>
+	</footer>
+</body>
+<script src="app.js"></script>
+
+</html>
